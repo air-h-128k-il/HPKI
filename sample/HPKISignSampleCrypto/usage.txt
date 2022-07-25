@@ -1,0 +1,16 @@
+
+■実行形式
+　HPKISignSampleCrypto <CSP_Type> <実行処理> <PIN>
+
+　<CSP_Type>	：認証用CSPなら「auth」、署名用CSPなら「sign」
+　<実行処理>	：証明書取得なら「getcert」、署名なら「sign」
+　<PIN>		：HPKIカードのPIN
+
+
+各処理の実行例を以下に示す。
+
+＜証明書取得＞
+例)HPKISignSampleCrypto auth getcert 9999
+
+＜署名＞
+例)HPKISignSampleCrypto sign sign 9999
